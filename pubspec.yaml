@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.1
+  flutter_icons: ^1.1.0
   flutter_phone_direct_caller: ^1.0.1
   intl: ^0.16.1
   provider: ^4.3.2+4

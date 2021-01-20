@@ -6,6 +6,7 @@ import 'package:contact/utils/date-format.dart';
 import 'package:contact/widgets/custom-iconbutton.dart';
 import 'package:contact/widgets/favorite-widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactDetail extends StatefulWidget {
@@ -101,7 +102,7 @@ class _ContactDetailState extends State<ContactDetail> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               MyIconButton(
-                                icon: Icons.phone_enabled_outlined,
+                                icon: Feather.phone_call,
                                 color: Colors.green,
                                 onPressed: () {_makingPhoneCall(contact.phone);},
                               ),
@@ -109,7 +110,7 @@ class _ContactDetailState extends State<ContactDetail> {
                                 width: 20,
                               ),
                               MyIconButton(
-                                icon: Icons.messenger_outline,
+                                icon: Feather.message_square,
                                 color: Colors.amber,
                                 onPressed: () {},
                               ),
@@ -124,7 +125,8 @@ class _ContactDetailState extends State<ContactDetail> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               MyIconButton(
-                                icon: Icons.email_outlined,
+                                icon: Feather.mail,
+                                color: Colors.amber,
                                 onPressed: () {},
                               ),
                             ],
@@ -138,7 +140,8 @@ class _ContactDetailState extends State<ContactDetail> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               MyIconButton(
-                                icon: Icons.calendar_today,
+                                icon: Icons.cake,
+                                color: Colors.amber,
                                 onPressed: () {},
                               ),
                             ],
