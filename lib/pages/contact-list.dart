@@ -77,6 +77,7 @@ class ContactList extends StatelessWidget {
               style: boldText.copyWith(fontSize: 25),
             ),
             onTap: () {
+              print(ContactAPI.getFavoriteContact.length);
               Navigator.of(context).pushNamed(
                 ContactDetail.routeName,
                 arguments: contact.id,

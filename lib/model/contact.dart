@@ -44,8 +44,9 @@ class ContactAPI {
       dateofbirth: DateTime.now(),
     ),
   ];
+
+  static List<Contact> getFavoriteContact = [];
 }
 
 typedef AddContact = void Function(Contact);
 typedef DeleteContact = bool Function(String);
-typedef AddToFavorite = void Function(Contact);
